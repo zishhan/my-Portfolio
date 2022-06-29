@@ -3,7 +3,7 @@
     --main-white: ghostwhite;
     --main-purple: #8c1aff;
     --main-blue: #3366cc;
-    --main-gray: #4d004d;
+    --main-gray: #003366;
 }
 
 /* basic reset */
@@ -118,6 +118,9 @@ img {
     padding: 2rem;
     text-transform: uppercase;
 }
+#navbar ul li a:hover {
+    background-color: var(--main-gray);
+}
 /* Header Section */
 #header-div {
     width: 100%;
@@ -190,25 +193,26 @@ img {
     font-size: 2rem;
     padding: 2rem 0.5rem;
   }
-  button, btn {
+  button {
+    border: none;
+    border-radius: 2px;
+  }
+.btn {
     display: inline-block;
     padding: 1rem 2rem;
-    border-radius: 2px;
-    border: none;
     background: var(--main-gray);
 }
 .btn-show-all {
     font-size: 2rem;
+    background: var(--main-gray);
     transition: background 0.3s ease-out;
 }
 .btn-show-all:hover {
     background: var(--main-purple);
 }
-.fa-chevron-right {
-    vertical-align: auto;
-}
 .btn-show-all:hover > i {
     transform: translateX(2px);
+    color: #ff7f50;
 }
 
 /* CONTACT SECTION */
@@ -243,10 +247,15 @@ img {
     flex-wrap: wrap;
 }
 .contact-details {
+    display: inline-block;
+    background: var(--main-gray);
     font-size: 2.4rem;
     text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
 }
-
+.contact-details:hover {
+    transform: translateY(8px);
+}
 
 /* Footer */
 
